@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>VTEX | CHALLENGE 2</title>
+</head>
+
+<body>
+
+    
+    <main class="content" id="content">
+
+
+        <section class="content--section">
+            <aside class="content--lead" id="subscribe">
+                <div class="content--lead__wrapper">
+                    <h2 class="content--lead__title">Cadastre-se para receber ofertas exclusivas!</h2>
+                    <form class="form" action="" data-form>
+
+                        <label for="name">Nome</label>
+                        <input type="text" name="name" id="name" placeholder="Digite seu nome" data-name>
+
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu melhor e-mail" data-email>
+
+                        <label for="name">Endereço</label>
+                        <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço"
+                            data-endereco>
+
+                        <label for="name">Número</label>
+                        <input type="text" name="numero" id="numero" placeholder="Digite seu número" data-numero>
+
+
+                        <input type="submit" title="Cadastrar" value="Cadastrar" data-submit>
+                    </form>
+                    <div class="content--lead__footer">
+                        <img src="./assets/gama.png" alt="Logo Gama Academy">
+
+                        <img src="" alt="">
+                    </div>
+
+                </div>
+            </aside>
+
+            <section class="content--offers" id="offers">
+
+                <div class="content--offers__wrapper">
+                    <h2>Promos imperdíveis </h2>
+                </div>
+
+                <ul class="card-container">
+                    <li class="card">
+                        <div class="card--wrapper">
+                            <img class="card--image" src="./assets/produto.png" alt="Imagem de produto">
+                            <h3 class="card--title" data-product-name>Mouse Gamer HyperX</h3>
+
+                            <h4 class="card--price" data-product-value>
+                                R$ 10.99
+                            </h4>
+
+                            <button onclick="cadastraProduto()"> Adicionar ao carrinho </button>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <div class="card--wrapper">
+                            <img class="card--image" src="./assets/produto.png" alt="Imagem de produto">
+                            <h3 class="card--title" data-product-name>Mouse Gamer HyperX</h3>
+
+                            <h4 class="card--price" data-product-value>
+                                R$ 10.99
+                            </h4>
+
+                            <button onclick="cadastraProduto()"> Adicionar ao carrinho </button>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <footer class="footer" id="footer">
+        <p>Todos os direitos reservados &copy; <span> Made by <a class="made-by-link"
+                    href="https://github.com/matheustakasaki"> Taka </span></a> </p>
+    </footer>
+
+    <script src="index.js"></script>
+
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Adicione nosso componente React. -->
+    <script src="./product.js"></script>
+</body>
+
+</html>
